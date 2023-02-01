@@ -1,4 +1,4 @@
-# Everything-about-JavaScript
+# Everything-about-JavaScript 💯
 
 - [x] What actually is JavaScript?
 - [x] Types of functions
