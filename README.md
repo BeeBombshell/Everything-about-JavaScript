@@ -6,3 +6,29 @@
 - [x] Hoisting and Fake Functions
 - [x] Lexical scope and scope chain
 - [x] Var Let Const
+
+
+# What actually is JavaScript?
+
+- Very versitile language
+
+- Runs in Javascript runtime environment -> Either browser or Node.js (or electronJS for desktop apps)
+
+- Different browsers implement different JS engines. (V8, SpiderMonkey, Chakra, JavaScriptCore)
+
+- Provide logic inside environment. (Browser, Node.js)
+
+- Environment provides APIs to interact with DOM, File System, Network, etc.
+
+- JS syntax is derived from Java. (Functional Programming, OOP)
+
+- JavaScript name is a copyright of Oracle. Organization named ECMA International standardized the language. (ECMAScript)
+ACTUAL NAME IS ECMASCRIPT, CALLED ES. Then we have more versions ES1, ES2, ES3, ES5, ES6.
+
+- TC-39 committee defines the feature of ES.
+
+- Vanilla JavaScript: Simple JavaScript.
+
+- NodeJs: JavaScript runtime environment. (V8 engine) has multiple features. (npm, package manager, etc)
+
+- Angular, React, Vue, etc are frameworks. (React is a library) [Changes in UI are very costly, the reason why GPUs are really expensive] To reduce this cost, we use frameworks. Writes code in JSX. (JSX is a syntax extension to JS) This makes optimised UI changes.
