@@ -32,3 +32,14 @@ ACTUAL NAME IS ECMASCRIPT, CALLED ES. Then we have more versions ES1, ES2, ES3, 
 - NodeJs: JavaScript runtime environment. (V8 engine) has multiple features. (npm, package manager, etc)
 
 - Angular, React, Vue, etc are frameworks. (React is a library) [Changes in UI are very costly, the reason why GPUs are really expensive] To reduce this cost, we use frameworks. Writes code in JSX. (JSX is a syntax extension to JS) This makes optimised UI changes.
+
+
+## Types of functions in JS
+
+It is possible to:
+- pass a function as an argument to another function
+- return a function from a function
+- assign a function to a variable
+with JS. JS functions are very powerful. They are called first class functions/ citizens.
+
+Refer to function.js for more details.
