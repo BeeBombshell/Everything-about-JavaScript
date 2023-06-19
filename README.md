@@ -43,3 +43,17 @@ It is possible to:
 with JS. JS functions are very powerful. They are called first class functions/ citizens.
 
 Refer to function.js for more details.
+
+### Function statement 
+
+```js
+function sayHello(param){
+    console.log("Hello", param);
+}
+sayHello(); // invocation
+sayHello("World");
+sayHello(10);
+sayHello([1,2,3,4,5])
+sayHello({ name: "Bhavya" })
+sayHello(); // this will print "Hello undefined"
+```
