@@ -69,3 +69,13 @@ console.log(b); // assignment by reference is possible
 ```
 We can directly assign values to a variable.
 
+### Function Expression
+
+```js
+let fnContainer = function fn() {
+    console.log("I am a function expression");
+}
+```
+
+Now if we call `FnContainer` it will invoke the `fn` function.
+
