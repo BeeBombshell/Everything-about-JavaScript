@@ -57,3 +57,15 @@ sayHello([1,2,3,4,5])
 sayHello({ name: "Bhavya" })
 sayHello(); // this will print "Hello undefined"
 ```
+
+### Functions are first class citizens 
+
+This means functions are treated as a variable.
+
+```js
+let a = [1,2,3,4,5];
+let b = a;
+console.log(b); // assignment by reference is possible
+```
+We can directly assign values to a variable.
+
