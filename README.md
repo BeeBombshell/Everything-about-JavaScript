@@ -79,3 +79,15 @@ let fnContainer = function fn() {
 
 Now if we call `FnContainer` it will invoke the `fn` function.
 
+### Anonymous Function
+
+```js
+let fnContainer = function () {
+    console.log("I am a function expression");
+    console.log("I am also an anonymous function");
+}
+```
+
+Whenever we do not give a name to a function, it is called an anonymous function. (In the above example, the name `fn` wasn't necessary, we could identify it by the name `fnContainer`)
+
+**USAGE:** Higher order functions
