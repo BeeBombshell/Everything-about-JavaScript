@@ -91,3 +91,19 @@ let fnContainer = function () {
 Whenever we do not give a name to a function, it is called an anonymous function. (In the above example, the name `fn` wasn't necessary, we could identify it by the name `fnContainer`)
 
 **USAGE:** Higher order functions
+
+### IIFE (Immediately Invoked Function Expression)
+
+Back in the time when we didn't have `let` or `const`, `var` was very troublesome. It was possible to create a global variable by mistake. To avoid this, we used IIFE.
+
+It is like `init()` function in python which is called automatically. (Initialization purposes)
+
+```js
+(function fn() {
+    console.log("I an IIFE");
+    console.log("I will be invoked immediately");
+})();
+```
+> Just need to wrap your functions in round braces and add a pair of round braces at the end => converted into IIFE, called automatically.
+
+**USAGE:** In require, parameter pollution w/o let and const, preserving double pollution, closure (library like Jquery)
