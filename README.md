@@ -125,3 +125,24 @@ let fn = (num) => {
 let fn = num => num * num;
 console.log(fn(5));
 ```
+
+## First Class Citizens
+
+- Functions are treated like variables - can be assigned to variables - **FUNCTION EXPRESSION**
+
+- Can be passed as a parameter - Basis of **Functional Programming**, **Higher Order Functions**, **Callback Functions**, **Everything Async**
+
+- Function can be returned from a function - **Closures**
+
+```js
+function sayHello(param){
+    console.log("Hello", param);
+}
+
+function smaller() {
+    console.log("I am smaller");
+}
+
+sayHello([1,2,3,4,5]);
+sayHello(smaller);
+```
