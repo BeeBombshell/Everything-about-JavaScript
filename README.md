@@ -44,7 +44,7 @@ with JS. JS functions are very powerful. They are called first class functions/ 
 
 Refer to function.js for more details.
 
-### Function statement 
+## Function statement 
 
 ```js
 function sayHello(param){
@@ -58,7 +58,7 @@ sayHello({ name: "Bhavya" })
 sayHello(); // this will print "Hello undefined"
 ```
 
-### Functions are first class citizens 
+## Functions are first class citizens 
 
 This means functions are treated as a variable.
 
@@ -69,7 +69,7 @@ console.log(b); // assignment by reference is possible
 ```
 We can directly assign values to a variable.
 
-### Function Expression
+## Function Expression
 
 ```js
 let fnContainer = function fn() {
@@ -79,7 +79,7 @@ let fnContainer = function fn() {
 
 Now if we call `FnContainer` it will invoke the `fn` function.
 
-### Anonymous Function
+## Anonymous Function
 
 ```js
 let fnContainer = function () {
@@ -92,7 +92,7 @@ Whenever we do not give a name to a function, it is called an anonymous function
 
 **USAGE:** Higher order functions
 
-### IIFE (Immediately Invoked Function Expression)
+## IIFE (Immediately Invoked Function Expression)
 
 Back in the time when we didn't have `let` or `const`, `var` was very troublesome. It was possible to create a global variable by mistake. To avoid this, we used IIFE.
 
@@ -107,3 +107,21 @@ It is like `init()` function in python which is called automatically. (Initializ
 > Just need to wrap your functions in round braces and add a pair of round braces at the end => converted into IIFE, called automatically.
 
 **USAGE:** In require, parameter pollution w/o let and const, preserving double pollution, closure (library like Jquery)
+
+## Arrow Function
+
+Many people believe arrow functions are created to simplify the syntax of functions which isnt true.
+
+It is useful in simplyfying the syntax, but also is the backbone of ReactJS. (Helps in binding, using `this` keyword)
+
+```js
+let fn = (num) => {
+    return num * num;
+}
+```
+
+> This can be written as:
+```js
+let fn = num => num * num;
+console.log(fn(5));
+```
