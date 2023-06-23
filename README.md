@@ -34,7 +34,7 @@ ACTUAL NAME IS ECMASCRIPT, CALLED ES. Then we have more versions ES1, ES2, ES3, 
 - Angular, React, Vue, etc are frameworks. (React is a library) [Changes in UI are very costly, the reason why GPUs are really expensive] To reduce this cost, we use frameworks. Writes code in JSX. (JSX is a syntax extension to JS) This makes optimised UI changes.
 
 
-## Types of functions in JS
+# Types of functions in JS
 
 It is possible to:
 - pass a function as an argument to another function
@@ -189,4 +189,21 @@ OUTPUT:
 I am outer returning inner
 Rval [Function: (anonymous)]
 I am inner
+```
+
+# JS Code Execution, Hoisting, and Execution Context
+
+Every JS Code runs inside an Execution Context. (Global Execution Context)
+
+Execution Context is a **wrapper** that supplies the environment and catalysts for the code to be executed.
+
+In Creation Phase, we get:
+- Global Object
+- This variable
+- Code
+
+```js
+console.log(global); // in browser we have window object instead of global
+console.log(this) // equals an empty object in nodejs environment
+// this equals the window object in browser
 ```
