@@ -146,3 +146,47 @@ function smaller() {
 sayHello([1,2,3,4,5]);
 sayHello(smaller);
 ```
+
+## Returning a function from a function
+
+```js
+funcion outer () {
+    console.log("I am outer returning inner");
+    return function inner() {
+        console.log("I am inner");
+    }
+}
+
+let rVal = outer();
+console.log("rVal", rVal);
+rVal();
+
+```
+OUTPUT:
+```
+I am outer returning inner
+Rval [Function: inner]
+I am inner
+```
+
+We can also convert the returning function into an anonymous function, like:
+
+```js
+funcion outer () {
+    console.log("I am outer returning inner");
+    return function () {
+        console.log("I am inner");
+    }
+}
+
+let rVal = outer();
+console.log("rVal", rVal);
+rVal();
+```
+
+OUTPUT:
+```
+I am outer returning inner
+Rval [Function: (anonymous)]
+I am inner
+```
