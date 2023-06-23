@@ -207,3 +207,31 @@ console.log(global); // in browser we have window object instead of global
 console.log(this) // equals an empty object in nodejs environment
 // this equals the window object in browser
 ```
+
+Any object that does not lie inside a function, is called a **Global Code** and lies in the Global Area called the **Global Execution Context**.
+
+**Global Object**
+- Node: Global
+- Browser: Window Object
+
+**This**
+- Global Execution Context: Empty Object
+- Browser: Window Object
+
+**Code**
+- Memort gets allocated for the code: Undefined (value) => Called **Hoisting**
+
+```js
+console.log("a is: ", a);
+var a;
+console.log("a is: ", a);
+a = 10;
+console.log("a is: ", a);
+```
+
+OUTPUT:
+```
+a is:  undefined
+a is:  undefined
+a is:  10
+```
