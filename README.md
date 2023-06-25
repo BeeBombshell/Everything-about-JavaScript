@@ -235,3 +235,62 @@ a is:  undefined
 a is:  undefined
 a is:  10
 ```
+
+## Memory Allocation for Function statements
+Memory gets allocated already, even for function.
+Heap gets allocated, reference gets stored in a stack, but undefined is not set.
+
+```js
+fn();
+function fn() {
+    console.log("I can be called even before my declaration");
+}
+```
+
+OUTPUT:
+```
+I can be called even before my declaration
+```
+
+```js
+function real() {
+    console.log("I am real. Always run me!");
+}
+
+function real () {
+    console.log("I am fake. Never run me!");
+}
+function real () {
+    console.log("You both are wasted!");
+}
+
+real();
+```
+
+OUTPUT:
+```
+You both are wasted!
+```
+
+```js
+console.log("varName: ", varName);
+var varName;
+varName = "Captain America";
+fn();
+function fn() {
+    console.log("Hello from fn");
+}
+fn();
+fnContainer();
+var fnContainer = function () {
+    console.log("I am an expression");
+}
+```
+
+OUTPUT:
+```
+varName:  undefined
+Hello from fn
+Hello from fn
+TypeError: fnContainer is not a function
+```
