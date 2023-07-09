@@ -294,3 +294,16 @@ Hello from fn
 Hello from fn
 TypeError: fnContainer is not a function
 ```
+
+## Lexical Scope and Scope Chain
+
+```js
+var varName = 10;
+function fn() {
+    var varName = 20;
+    console.log(varName)    // this would give 20
+}
+fn();
+```
+
+Every function runs in an Execution Context. This Execution Context lies inside a stack called **Call Stack**.
