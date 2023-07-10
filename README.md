@@ -307,3 +307,10 @@ fn();
 ```
 
 Every function runs in an Execution Context. This Execution Context lies inside a stack called **Call Stack**.
+
+
+Global Execution Context contains:
+- Global Object
+- `this` (empty object)
+- memory allocation (for varName -> undefined)
+
