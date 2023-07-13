@@ -314,3 +314,5 @@ Global Execution Context contains:
 - `this` (empty object)
 - memory allocation (for varName -> undefined)
 
+Execution context gets created whenever the function is called. All the global variables are carried forward but the variables inside the function are allocated memory on priority.  
+
