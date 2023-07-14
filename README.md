@@ -316,3 +316,13 @@ Global Execution Context contains:
 
 Execution context gets created whenever the function is called. All the global variables are carried forward but the variables inside the function are allocated memory on priority.  
 
+So for the following code:
+```js
+console.log(varName)    // this would give undefined as well
+var varName = 10;
+function fn() {
+    console.log(varName)    // this would give undefined (as the memory has been allocated for the varName inside the function but it isnt initialized)
+    var varName = 20;
+}
+fn();
+```
